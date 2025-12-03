@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /oup>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task Manager</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/global.css" />
+    <link rel="stylesheet" href="/assets/css/buttons.css" />
+    <link rel="stylesheet" href="/assets/css/form.css" />
+    <link rel="stylesheet" href="/assets/css/auth.css" />
+    <link rel="stylesheet" href="/components/login/login.css" />
   </head>
   <body>
+    <div class="purple-circle"></div>
+    <div class="blue-circle"></div>
+    <div class="yellow-circle"></div>
     <template id="auth-template">
       <div class="auth-wrapper">
+        <div class="ring"></div>
+        <img
+          src="/assets/images/image_2.svg"
+          alt="arrow icon"
+          class="arrow-icon"
+        />
+        <img
+          src="/assets/images/image_3.svg"
+          alt="arrow icon"
+          class="triangle"
+        />
+        <div class="auth-header">
+          <div class="auth-icons">
+            <img
+              src="/assets/images/image_4.svg"
+              alt="checkmark icon"
+              class="header-icon"
+            />
+            <div class="dot-icon"></div>
+          </div>
+          <div class="auth-text">
+            <h1>Welcome Back!</h1>
+            <p>Enter your details to access your account</p>
+          </div>
+          <div class="auth-toggle">
+            <button class="toggle-btn login-btn">Login</button>
+            <button class="toggle-btn signup-btn">Sign Up</button>
+          </div>
+        </div>
         <div class="auth-container">
           <slot></slot>
         </div>
+        <p class="auth-footer">
+          By continuing, you agree to our <a href="#">Terms of Service</a> &
+          <a href="#">Privacy Policy</a>
+        </p>
       </div>
     </template>
 
     <auth-page mode="login"></auth-page>
+    <footer>© 2024 TaskMaster | Made By Abdulkareem Yetunde</footer>
 
     <script src="/templates/auth/auth.js" defer></script>
   </body>
