@@ -1,0 +1,81 @@
+/* Shared form styles for login and signup components */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 0.5rem 0.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+/* Wrapper for inputs with icons */
+.input-group {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.input-group svg {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.input-group input {
+  padding-left: 2.75rem;
+  width: 100%;
+}
+
+input,
+textarea,
+select {
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  font-size: 1rem;
+  display: block;
+  background: white;
+  color: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(95, 60, 200, 0.08);
+  border-color: rgba(95, 60, 200, 0.6);
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  margin-block: 1.2em;
+}
+
+.small-note {
+  font-size: 0.85rem;
+  color: oklch(0.551 0.027 264.364);
+  margin-top: 2px;
+}

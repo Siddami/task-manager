@@ -1,0 +1,10 @@
+/* Component-specific overrides for the login form (shared layout in /assets/css/form.css) */
+.login-form {
+  margin: 0;
+}
+
+.login-form .form-actions {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
