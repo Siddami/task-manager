@@ -1,0 +1,61 @@
+.community-page-content {
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  border: 1px solid #ccccccc5;
+  border-radius: 6px;
+}
+
+.community-main {
+  padding: 1em;
+}
+
+.post-creation-area {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.post-creation-area textarea {
+  width: 100%;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.75rem;
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.post-creation-area textarea:focus {
+  outline: 2px solid var(--primary-color);
+  border-color: transparent;
+}
+
+.post-creation-area button {
+  align-self: flex-end;
+  padding: 0.5rem 1.5rem;
+}
+
+.no-posts-message {
+  border: 1px dashed #d1d5db;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #6b7280;
+}
+
+.button-primary {
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  display: inline-flex;
+  gap: 0.2em;
+  border-radius: 6px;
+  opacity: 0.3;
+}
