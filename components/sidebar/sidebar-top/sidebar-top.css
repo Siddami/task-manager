@@ -1,0 +1,49 @@
+.sidebar-top-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45em;
+}
+
+.logo .icon{
+    background: linear-gradient(
+    to right bottom,
+    oklch(0.546 0.245 262.881) 0%,
+    oklch(0.511 0.262 276.966) 100%
+  );
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}
+
+.icon img{
+    width: 20px;
+    height: 20px;
+}
+
+.logo .text{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.toggle-btn {
+  display: flex;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.toggle-btn img {
+  width: 16px;
+  height: 16px;
+}

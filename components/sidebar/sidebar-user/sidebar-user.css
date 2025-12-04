@@ -1,0 +1,39 @@
+.sidebar-user-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+   background: linear-gradient(
+    to right bottom,
+    oklch(0.546 0.245 262.881) 0%,
+    oklch(0.511 0.262 276.966) 100%
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.user-info p {
+  margin: 0;
+  line-height: 1.2;
+  color: black;
+}
+
+.user-info .username{
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.user-email {
+  font-size: 0.8rem;
+  color: var(--gray-text);
+}
