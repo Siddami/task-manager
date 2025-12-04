@@ -1,0 +1,44 @@
+<template id="task-modal-template">
+  <div class="modal-overlay">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sparkles h-5 w-5 text-blue-600" aria-hidden="true"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+      Create New Task</h2>
+      <p>Add a new task to your productivity list</p>
+      </div>
+      <form id="task-form">
+        <div class="form-group">
+          <label for="task-title">Title</label>
+          <input type="text" id="task-title" name="title" placeholder="Enter task title" required />
+        </div>
+        <div class="form-group">
+          <label for="task-description">Description</label>
+          <textarea id="task-description" name="description" placeholder="Add task details"></textarea>
+        </div>
+        <div class="priority-date">
+            <div class="form-group">
+          <label for="task-priority">Priority</label>
+          <select id="task-priority" name="priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+           <div class="form-group">
+          <label for="task-due-date">Due Date</label>
+          <input type="date" id="task-due-date" name="dueDate" />
+        </div>
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel button-secondary">
+            Cancel
+          </button>
+          <button type="submit" class="btn-submit button-primary">
+            Add Task
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>
