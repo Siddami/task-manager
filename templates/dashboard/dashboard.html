@@ -1,1 +1,40 @@
-<h1>Dashboard page</h1>
+<template id="dashboard-template">
+  <div class="dashboard-wrapper">
+    <aside class="sidebar">
+      <div class="sidebar-info">
+        <div class="sidebar-top-container">
+          <sidebar-top></sidebar-top>
+        </div>
+
+        <div class="sidebar-user-container">
+          <sidebar-user></sidebar-user>
+        </div>
+
+        <nav class="sidebar-nav">
+          <sidebar-nav-item
+            page="/pages/dashboard/task.html"
+            icon="/assets/images/task.svg"
+            text="Tasks"
+          ></sidebar-nav-item>
+          <sidebar-nav-item
+            page="/pages/dashboard/community.html"
+            icon="/assets/images/community.svg"
+            text="Community"
+          ></sidebar-nav-item>
+        </nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <button class="logout">
+          <span class="logout-icon"></span>
+          <span class="logout-text">Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="dashboard-content">
+      <slot></slot>
+    </main>
+    <task-modal></task-modal>
+  </div>
+</template>
