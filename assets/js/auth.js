@@ -104,8 +104,12 @@ class AuthPage extends HTMLElement {
       if (mode === "login") {
         await this._handleLogin(email, password);
       } else {
-        const fullName = form.fullName.value;
-        await this._handleSignUp(fullName, email, password);
+        if (form.fullName) {
+          const fullName = form.fullName.value;
+          await this._handleSignUp(fullName, email, password);
+        } else {
+          console.error("fullName field not found in the signup form.");
+        }
       }
     });
   }
