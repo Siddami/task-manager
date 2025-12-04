@@ -1,0 +1,4 @@
+# Ignore firebase config file containing secrets
+/home/sid/workspace/personal-projects/task-manager/assets/js/firebase-config.js
+
+# You can also add other files/folders to ignore, like node_modules
