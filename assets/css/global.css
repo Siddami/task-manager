@@ -1,14 +1,16 @@
 :root {
-  --text-color: oklch(0.21 0.034 264.665);
+  --text-color: oklch(0.373 0.034 259.733);
   --auth-background: rgb(248, 249, 250);
   --ring-color: oklch(0.785 0.115 274.713);
+  --lighter-ring: oklch(0.885 0.05 274.713);
+  --primary-color: oklch(0.546 0.245 262.881);
   box-sizing: border-box;
   font-size: 16px;
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-body {
+.overall-container {
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -23,11 +25,10 @@ body {
     );
   background-repeat: no-repeat, no-repeat;
   background-size: 420px auto, cover;
-  /* allow page to scroll and let fixed footer be visible */
   overflow: visible;
 }
 
-body::after {
+.overall-container::after {
   content: "";
   position: fixed;
   inset: 0;
