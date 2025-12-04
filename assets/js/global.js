@@ -20,8 +20,7 @@ export async function signUp(fullName, email, password){
     
     await setDoc(doc(db, "users", userCredential.user.uid), {
       fullName,
-      email,
-      createdAt: Date.now(),      
+      email,    
     });
     return userCredential;
 }

@@ -113,8 +113,7 @@ class AuthPage extends HTMLElement {
   async _handleSignUp(fullName, email, password) {
     try {
       await signUp(fullName, email, password);
-      alert("Sign up successful! Redirecting to your dashboard.");
-      navigateTo("/templates/dashboard/dashboard.html");
+      navigateTo("/pages/dashboard/task.html");
     } catch (error) {
       console.error("Error during sign up:", error);
       alert(`Sign Up Failed: ${error ? error.message : "Unknown error"}`);
@@ -124,8 +123,7 @@ class AuthPage extends HTMLElement {
   async _handleLogin(email, password) {
     try {
       await login(email, password);
-      alert("Login successful! Redirecting to your dashboard.");
-      navigateTo("/templates/dashboard/dashboard.html");
+      navigateTo("/pages/dashboard/task.html");
     } catch (error) {
       console.error("Error during login:", error);
       alert(`Login Failed: ${error ? error.message : "Unknown error"}`);

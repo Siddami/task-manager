@@ -1,9 +1,11 @@
 :root {
   --text-color: oklch(0.373 0.034 259.733);
+  --gray-text: #6a7282;
   --auth-background: rgb(248, 249, 250);
   --ring-color: oklch(0.785 0.115 274.713);
   --lighter-ring: oklch(0.885 0.05 274.713);
   --primary-color: oklch(0.546 0.245 262.881);
+  --dashboard-background: #F9FAFB;
   box-sizing: border-box;
   font-size: 16px;
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",

@@ -17,55 +17,56 @@
     <link rel="stylesheet" href="/pages/login/login.css" />
   </head>
   <body>
-    <div class="purple-circle"></div>
-    <div class="blue-circle"></div>
-    <div class="yellow-circle"></div>
-    <template id="auth-template">
-      <div class="auth-wrapper">
-        <div class="ring"></div>
-        <img
-          src="/assets/images/image_2.svg"
-          alt="arrow icon"
-          class="arrow-icon"
-        />
-        <img
-          src="/assets/images/image_3.svg"
-          alt="arrow icon"
-          class="triangle"
-        />
-        <div class="auth-header">
-          <div class="auth-icons">
-            <img
-              src="/assets/images/image_4.svg"
-              alt="checkmark icon"
-              class="header-icon"
-            />
-            <div class="dot-icon"></div>
+    <div class="overall-container">
+      <div class="purple-circle"></div>
+      <div class="blue-circle"></div>
+      <div class="yellow-circle"></div>
+      <template id="auth-template">
+        <div class="auth-wrapper">
+          <div class="ring"></div>
+          <img
+            src="/assets/images/image_2.svg"
+            alt="arrow icon"
+            class="arrow-icon"
+          />
+          <img
+            src="/assets/images/image_3.svg"
+            alt="arrow icon"
+            class="triangle"
+          />
+          <div class="auth-header">
+            <div class="auth-icons">
+              <img
+                src="/assets/images/image_4.svg"
+                alt="checkmark icon"
+                class="header-icon"
+              />
+              <div class="dot-icon"></div>
+            </div>
+            <div class="auth-text">
+              <h1>Welcome Back!</h1>
+              <p>Enter your details to access your account</p>
+            </div>
+            <div class="auth-toggle">
+              <button class="toggle-btn login-btn">Login</button>
+              <button class="toggle-btn signup-btn">Sign Up</button>
+            </div>
           </div>
-          <div class="auth-text">
-            <h1>Welcome Back!</h1>
-            <p>Enter your details to access your account</p>
+          <div class="auth-container">
+            <slot></slot>
           </div>
-          <div class="auth-toggle">
-            <button class="toggle-btn login-btn">Login</button>
-            <button class="toggle-btn signup-btn">Sign Up</button>
-          </div>
+          <p class="auth-footer">
+            By continuing, you agree to our <a href="#">Terms of Service</a> &
+            <a href="#">Privacy Policy</a>
+          </p>
         </div>
-        <div class="auth-container">
-          <slot></slot>
-        </div>
-        <p class="auth-footer">
-          By continuing, you agree to our <a href="#">Terms of Service</a> &
-          <a href="#">Privacy Policy</a>
-        </p>
-      </div>
-    </template>
+      </template>
 
-    <auth-page mode="login"></auth-page>
-    <footer>© 2024 TaskMaster | Made By Abdulkareem Yetunde</footer>
-
+      <auth-page mode="login"></auth-page>
+      <footer>© 2024 TaskMaster | Made By Abdulkareem Yetunde</footer>
+    </div>
     <script src="/assets/js/firebase.js" type="module"></script>
-    <script src="/assets/js/auth.js" defer type="module"></script>
+    <script src="/assets/js/auth.js" type="module"></script>
     <script src="/assets/js/global.js" type="module"></script>
   </body>
 </html>
